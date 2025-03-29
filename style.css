@@ -68,7 +68,6 @@ body {
   text-decoration: none;
   color: white;
   border-bottom: 2px solid var(--light-green);
-  border-spacing: 4rem;
 }
 .contact-me {
   font-size: 0.9rem;
@@ -99,4 +98,36 @@ body {
   color: rgba(255, 255, 255, 0.584);
   font-weight: 600;
   padding-top: 0.2rem;
+}
+
+.project-section {
+  padding-top: 3.5rem;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+  padding-bottom: 1.4rem;
+}
+
+.flex-row p {
+  text-decoration: none;
+  color: white;
+  border-bottom: 2px solid var(--light-green);
+}
+
+.project-img-container {
+  width: 100%;
+  height: 200px;
+  border: 2px solid red;
+}
+
+.project-img-container img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
