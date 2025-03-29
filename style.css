@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --light-green: hsl(153, 71%, 59%);
+  --theme-dark: hsl(0, 0%, 8%);
+  --white-color: hsl(0, 0%, 100%);
+  --light-red: hsl(7, 100%, 68%);
+}
+
+body {
+  background-color: var(--theme-dark);
+  font-family: "Space Grotesk", sans-serif;
+  color: var(--white-color);
+}
+
+.container {
+  padding: 0rem 2rem;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+  gap: 20px;
+}
+
+.social-link-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.hero-section {
+  /* border: 2px solid black; */
+  text-align: center;
+}
+
+.hero-section h1 {
+  font-size: 2rem;
+  padding-top: 2rem;
+}
+
+.bottom-border {
+  border-bottom: 3px solid var(--light-green);
+}
+
+.hero-section p {
+  padding-top: 1rem;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 1.3rem;
+}
+
+.contact-container a {
+  text-decoration: none;
+  color: white;
+  border-bottom: 2px solid var(--light-green);
+  border-spacing: 4rem;
+}
+.contact-me {
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  padding-bottom: 0.5rem;
+}
+
+.straight-line-partition {
+  border: 1px solid white;
+  margin-top: 3rem;
+  width: 100%;
+}
+
+.language-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.lang-col p {
+  color: rgba(255, 255, 255, 0.584);
+  font-weight: 600;
+  padding-top: 0.2rem;
+}
