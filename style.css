@@ -13,6 +13,7 @@
   --theme-dark: hsl(0, 0%, 8%);
   --white-color: hsl(0, 0%, 100%);
   --light-red: hsl(7, 100%, 68%);
+  --light-white: rgba(255, 255, 255, 0.584);
 }
 
 body {
@@ -111,23 +112,65 @@ body {
   gap: 10px;
   align-items: center;
   padding-bottom: 1.4rem;
+  /* border: none; */
 }
 
-.flex-row p {
+.flex-row {
   text-decoration: none;
   color: white;
   border-bottom: 2px solid var(--light-green);
 }
 
+.contact-container-2 {
+  padding: 0;
+  margin: 0;
+}
 .project-img-container {
   width: 100%;
   height: 200px;
-  border: 2px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: black; /* Matches the background */
 }
 
 .project-img-container img {
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; /* Ensures the full image is visible */
+  object-position: center;
+}
+
+.project-heading {
+  padding: 1rem 0 0.4rem 0;
+}
+
+.project-content {
+  font-size: 1.1rem;
+}
+
+.project-lang {
+  display: flex;
+  gap: 20px;
+  color: var(--light-white);
+  padding-bottom: 1rem;
+}
+
+.project-link-container {
+  display: flex;
+  gap: 20px;
+  padding-bottom: 1.3rem;
+}
+.project-link-container p {
+  border-bottom: 2px solid var(--light-green);
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  padding-bottom: 0.5rem;
+}
+
+.password-generator-img {
+  object-position: bottom;
 }
