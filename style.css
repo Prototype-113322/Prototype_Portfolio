@@ -46,6 +46,18 @@ a {
   gap: 20px;
 }
 
+.profile-img-container {
+  width: 100%;
+  border: auto;
+  padding-top: 2rem;
+}
+
+.profile-img-container img {
+  width: 100%;
+  height: auto;
+  filter: grayscale(100%);
+}
+
 .hero-section {
   /* border: 2px solid black; */
   text-align: center;
@@ -126,7 +138,7 @@ a {
 }
 .project-img-container {
   width: 100%;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   /* display: flex;
   justify-content: center;
   align-items: center;
@@ -184,3 +196,38 @@ a {
   align-items: center; */
   margin-top: 1rem;
 }
+
+/* CSS */
+.show-more-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: none;
+  font-weight: 600;
+}
+
+.show-more-btn button {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: var(--theme-dark);
+  border: 1px solid var(--light-green);
+  color: white;
+}
+
+.show-more-btn button:hover {
+  background-color: var(--light-green);
+  color: black;
+  font-weight: 600;
+}
+
+/* .button-8:focus {
+  box-shadow: 0 0 0 4px rgba(0, 149, 255, 0.15);
+} */
+
+/* .button-8:active {
+  background-color: #a0c7e4;
+  box-shadow: none;
+  color: #2c5777;
+} */
