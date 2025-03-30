@@ -14,6 +14,7 @@
   --white-color: hsl(0, 0%, 100%);
   --light-red: hsl(7, 100%, 68%);
   --light-white: rgba(255, 255, 255, 0.584);
+  --light-grey: #242424;
 }
 
 body {
@@ -222,12 +223,87 @@ a {
   font-weight: 600;
 }
 
-/* .button-8:focus {
-  box-shadow: 0 0 0 4px rgba(0, 149, 255, 0.15);
-} */
+.contact-info-section {
+  background-color: var(--light-grey);
+  padding: 2rem 1.3rem;
+}
 
-/* .button-8:active {
-  background-color: #a0c7e4;
-  box-shadow: none;
-  color: #2c5777;
-} */
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 15px;
+}
+
+form {
+  padding-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input-text {
+  background: none;
+  border: none;
+  width: 100%;
+  border-bottom: 1px solid var(--light-green);
+  outline: none;
+  /* border: 2px solid red; */
+  padding-bottom: 0.5rem;
+  color: white;
+  font-size: 1rem;
+}
+
+.input-field {
+  position: relative;
+  margin-top: 1rem;
+  /* padding: 0 0 1rem 0; */
+}
+
+.error-icon {
+  position: absolute;
+  right: 0;
+  bottom: 0.8rem;
+}
+
+label {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.452);
+}
+
+.label-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.error-message {
+  color: var(--light-red);
+}
+
+.send-message {
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  padding-bottom: 0.5rem;
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 2rem;
+}
+.send-message p {
+  text-decoration: none;
+  color: white;
+  border-bottom: 2px solid var(--light-green);
+  cursor: pointer;
+  padding-bottom: 0.5rem;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 3rem;
+}
