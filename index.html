@@ -50,10 +50,6 @@
                 alt="icon-discord"
                 class="icon-discord"
               />
-              <!-- <i
-                class="fa-brands fa-discord discord-icon"
-                style="color: white"
-              ></i> -->
             </a>
           </div>
         </section>
@@ -88,7 +84,7 @@
         <div class="straight-line-partition"></div>
       </div>
       <!-- LANGUAGE SECTION -->
-      <section class="language-section language-grid-layout">
+      <section class="language-section language-grid-layout smooth-transition">
         <article class="lang-col">
           <h2>HTML</h2>
           <p>1 Years Experience</p>
@@ -113,7 +109,7 @@
       <div class="straight-line-partition hidden-line"></div>
 
       <!-- PROJECT SECTION -->
-      <section class="project-section">
+      <section class="project-section smooth-transition">
         <section class="flex-row">
           <h2 class="custom-heading-size">Projects</h2>
           <div class="contact-container contact-container-2">
@@ -122,8 +118,8 @@
             </a>
           </div>
         </section>
-        <!-- First Project -->
         <section class="project-grid">
+          <!-- First Project -->
           <section class="project-content">
             <div class="desktop-hover-container">
               <div class="project-img-container">
@@ -157,7 +153,7 @@
               <p>CSS</p>
               <p>JAVASCRIPT</p>
             </div>
-            <div class="project-link-container">
+            <div class="project-link-container desktop-hidden">
               <a
                 href="https://prototype-113322.github.io/Ensure-Landing-Page/"
                 target="_blank"
@@ -205,7 +201,7 @@
               <p>CSS</p>
               <p>JAVASCRIPT</p>
             </div>
-            <div class="project-link-container">
+            <div class="project-link-container desktop-hidden">
               <a
                 href="https://prototype-113322.github.io/Easybank-Landing-Page/"
                 target="_blank"
@@ -253,7 +249,7 @@
               <p>CSS</p>
               <p>JAVASCRIPT</p>
             </div>
-            <div class="project-link-container">
+            <div class="project-link-container desktop-hidden">
               <a
                 href="https://prototype-113322.github.io/Password-Generator/"
                 target="_blank"
@@ -302,7 +298,7 @@
               <p>HTML</p>
               <p>CSS</p>
             </div>
-            <div class="project-link-container">
+            <div class="project-link-container desktop-hidden">
               <a
                 href="https://prototype-113322.github.io/The-final-project-of-Conquering-Layouts-by-Kevin-Powell./"
                 target="_blank"
@@ -350,7 +346,7 @@
               <p>CSS</p>
               <p>JAVASCRIPT</p>
             </div>
-            <div class="project-link-container">
+            <div class="project-link-container desktop-hidden">
               <a
                 href="https://prototype-113322.github.io/Character-Counter/"
                 target="_blank"
@@ -399,7 +395,7 @@
               <p>HTML</p>
               <p>CSS</p>
             </div>
-            <div class="project-link-container">
+            <div class="project-link-container desktop-hidden">
               <a
                 href="https://prototype-113322.github.io/E-Learning-Landing-Page/"
                 target="_blank"
@@ -423,7 +419,10 @@
     </div>
     <!-- Container Closed Here -->
     <!-- CONTACT INFO -->
-    <section class="contact-info-section" id="contact-info-container">
+    <section
+      class="contact-info-section smooth-transition"
+      id="contact-info-container"
+    >
       <div class="center flex-contact-layout">
         <section class="contact-details">
           <h2 class="custom-heading-size">Contact</h2>
@@ -433,32 +432,53 @@
           </p>
         </section>
         <section class="contact-form">
-          <form action="">
+          <!-- FORM -->
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <input
+              type="hidden"
+              name="access_key"
+              value="fb96f367-c633-4b8f-9856-1975e8ca1894"
+            />
+
             <!-- Name Input field -->
             <div class="input-field">
-              <input type="text" id="name-text" class="input-text" />
-              <i
-                class="fa-solid fa-circle-exclamation error-icon"
-                style="color: hsl(7, 100%, 68%)"
-              ></i>
+              <input
+                type="text"
+                id="name-text"
+                class="input-text"
+                name="name"
+              />
+              <div class="error-icon-container hidden">
+                <i
+                  class="fa-solid fa-circle-exclamation error-icon"
+                  style="color: hsl(7, 100%, 68%)"
+                ></i>
+              </div>
             </div>
             <div class="label-container">
               <label for="name">NAME</label>
-              <label for="error-message" class="error-message"
+              <label for="error-message" class="error-message hidden"
                 >Sorry, Invalid Format</label
               >
             </div>
             <!-- Email Input field -->
             <div class="input-field">
-              <input type="email" id="email-text" class="input-text" />
-              <i
-                class="fa-solid fa-circle-exclamation error-icon"
-                style="color: hsl(7, 100%, 68%)"
-              ></i>
+              <input
+                type="email"
+                id="email-text"
+                class="input-text"
+                name="email"
+              />
+              <div class="error-icon-container hidden">
+                <i
+                  class="fa-solid fa-circle-exclamation error-icon"
+                  style="color: hsl(7, 100%, 68%)"
+                ></i>
+              </div>
             </div>
             <div class="label-container">
               <label for="email">EMAIL</label>
-              <label for="error-message" class="error-message"
+              <label for="error-message" class="error-message hidden"
                 >Sorry, Invalid Format</label
               >
             </div>
@@ -470,22 +490,37 @@
                 id="message-text"
                 class="input-text"
               ></textarea>
-              <i
-                class="fa-solid fa-circle-exclamation error-icon"
-                style="color: hsl(7, 100%, 68%)"
-              ></i>
+              <div class="error-icon-container hidden">
+                <i
+                  class="fa-solid fa-circle-exclamation error-icon"
+                  style="color: hsl(7, 100%, 68%)"
+                ></i>
+              </div>
             </div>
+
+            <!-- Honeypot Spam Protection -->
+            <input
+              type="checkbox"
+              name="botcheck"
+              class="hidden"
+              style="display: none"
+            />
+
             <div class="label-container">
               <label for="message">MESSAGE</label>
-              <label for="error-message" class="error-message"
+              <label for="error-message" class="error-message hidden"
                 >Sorry, Invalid Format</label
               >
             </div>
+            <!-- SEND MESSAGE BUTTON -->
+            <div class="send-message-container">
+              <button type="submit" class="send-message">SEND MESSAGE</button>
+            </div>
           </form>
           <!-- SEND MESSAGE CONTAINER -->
-          <div class="send-message">
+          <!-- <div class="send-message">
             <p>SEND MESSAGE</p>
-          </div>
+          </div> -->
         </section>
       </div>
 
@@ -499,24 +534,39 @@
         </section>
         <section class="nav-col-2">
           <div class="social-link-container">
-            <a href="https://github.com/Prototype-113322" target="_blank">
+            <a
+              href="https://github.com/Prototype-113322"
+              target="_blank"
+              class="icon"
+            >
               <img src="./assets/images/icon-github.svg" alt="icon-github" />
             </a>
             <a
               href="https://www.linkedin.com/in/muhammad-sarwar14/"
               target="_blank"
+              class="icon"
             >
               <img
                 src="./assets/images/icon-linkedin.svg"
                 alt="icon-linkedin"
               />
             </a>
-            <a href="" target="_blank">
-              <i class="fa-brands fa-discord" style="color: white"></i>
+            <a
+              href="https://discord.gg/SMePFKA3ff"
+              target="_blank"
+              class="icon discord-icon-container"
+            >
+              <img
+                src="./assets/images/discord.svg"
+                alt="icon-discord"
+                class="icon-discord"
+              />
             </a>
           </div>
         </section>
       </footer>
     </section>
+
+    <script src="./script.js"></script>
   </body>
 </html>
